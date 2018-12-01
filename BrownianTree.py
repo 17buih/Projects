@@ -1,11 +1,3 @@
-#Wiley Bui buixx206
-#I understand this is a graded, individual examination that may not be
-#discussed with anyone. I also understand that obtaining solutions or
-#partial solutions from outside sources or discussing any aspect of the exam
-#with anyone is academic misconduct and will result in failing the course.
-#I further certify that this program represents my own work and that none of
-#it was obtained from any source other than material presented as part of the
-#course
 import turtle, math, random
 
 def update_new_dot(grid, radius, origin, row, col):  #Updates a correct column & row in grid, and Displays x & y in turtle
