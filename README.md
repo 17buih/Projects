@@ -1,2 +1,2 @@
 # Wiley's Projects
-Projects from Computer Science Courses
+Projects from CSCI Courses
