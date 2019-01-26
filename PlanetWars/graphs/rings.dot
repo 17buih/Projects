@@ -1,0 +1,70 @@
+graph g {
+  // Outer ring
+  1 [ habit = 3, size = 100, x = 5, y = 1, base = 1 ]
+  2 [ habit = 1, size = 50 , x = 7, y = 1 ]
+  3 [ habit = 1, size = 50 , x = 9, y = 3 ]
+  4 [ habit = 1, size = 50 , x = 9, y = 5 ]
+  5 [ habit = 1, size = 50 , x = 9, y = 7 ]
+  6 [ habit = 1, size = 50 , x = 7, y = 9 ]
+  7 [ habit = 3, size = 100 , x = 5, y = 9, base = 2 ]
+  8 [ habit = 1, size = 50 , x = 3, y = 9 ]
+  9 [ habit = 1, size = 50 , x = 1, y = 7 ]
+  10 [ habit = 1, size = 50 , x = 1, y = 5 ]
+  11 [ habit = 1, size = 50 , x = 1, y = 3 ]
+  12 [ habit = 1, size = 50 , x = 3, y = 1 ]
+
+  1 -- 2 [ weight = 3, label = 3 ]
+  2 -- 3 [ weight = 3, label = 3 ]
+  3 -- 4 [ weight = 3, label = 3 ]
+  4 -- 5 [ weight = 3, label = 3 ]
+  5 -- 6 [ weight = 3, label = 3 ]
+  6 -- 7 [ weight = 3, label = 3 ]
+  7 -- 8 [ weight = 3, label = 3 ]
+  8 -- 9 [ weight = 3, label = 3 ]
+  9 -- 10 [ weight = 3, label = 3 ]
+  10 -- 11 [ weight = 3, label = 3 ]
+  11 -- 12 [ weight = 3, label = 3 ]
+  12 -- 1 [ weight = 3, label = 3 ]
+
+  // Inner ring
+  13 [ habit = 2, size = 75, x = 4, y = 3 ]
+  14 [ habit = 2, size = 75, x = 6, y = 3 ]
+  15 [ habit = 2, size = 75, x = 7, y = 4 ]
+  16 [ habit = 2, size = 75, x = 7, y = 6 ]
+  17 [ habit = 2, size = 75, x = 6, y = 7 ]
+  18 [ habit = 2, size = 75, x = 4, y = 7 ]
+  19 [ habit = 2, size = 75, x = 3, y = 6 ]
+  20 [ habit = 2, size = 75, x = 3, y = 4 ]
+
+  13 -- 14 [ weight = 2, label = 2 ]
+  14 -- 15 [ weight = 2, label = 2 ]
+  15 -- 16 [ weight = 2, label = 2 ]
+  16 -- 17 [ weight = 2, label = 2 ]
+  17 -- 18 [ weight = 2, label = 2 ]
+  18 -- 19 [ weight = 2, label = 2 ]
+  19 -- 20 [ weight = 2, label = 2 ]
+  20 -- 13 [ weight = 2, label = 2 ]
+
+  // Inner dot
+  21 [ habit = 1, size = 150, x = 5, y = 5 ]
+
+  // Connections between rings
+  1 -- 13 [ weight = 3, label = 3 ]
+  1 -- 14 [ weight = 3, label = 3 ]
+  4 -- 15 [ weight = 3, label = 3 ]
+  4 -- 16 [ weight = 3, label = 3 ]
+  7 -- 17 [ weight = 3, label = 3 ]
+  7 -- 18 [ weight = 3, label = 3 ]
+  10 -- 19 [ weight = 3, label = 3 ]
+  10 -- 20 [ weight = 3, label = 3 ]
+
+  21 -- 13 [ weight = 3, label = 3 ]
+  21 -- 14 [ weight = 3, label = 3 ]
+  21 -- 15 [ weight = 3, label = 3 ]
+  21 -- 16 [ weight = 3, label = 3 ]
+  21 -- 17 [ weight = 3, label = 3 ]
+  21 -- 18 [ weight = 3, label = 3 ]
+  21 -- 19 [ weight = 3, label = 3 ]
+  21 -- 20 [ weight = 3, label = 3 ]
+
+}
