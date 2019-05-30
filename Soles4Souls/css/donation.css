@@ -1,0 +1,327 @@
+:root {
+    --colorLightGreen: #3cc44c;
+    --colorGreen: #169825;
+}
+
+.dark-green, .fa:hover {
+    color: var(--colorGreen);
+}
+
+.arrow-bounce {
+    text-shadow: -1px 0 var(--colorGreen), 0 1px var(--colorGreen), 1px 0 var(--colorGreen), 0 -1px var(--colorGreen);
+}
+
+.arrow-bounce:hover {
+    color: var(--colorGreen);
+}
+
+.donation-box:hover .fa {
+    color: white;
+}
+
+.faxable .faxable-text, #mySelection, .subscribe, .dark-green-background {
+    background: var(--colorGreen) !important;
+}
+
+.subscribe {
+    padding-top: 0px !important;
+    border: 1px solid var(--colorGreen);
+}
+
+#welcome-page {
+    color: white;
+    position: relative;
+}
+
+#welcome-page-message {
+    font-family: "Regular";
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-left: 35%;
+    transform: translateY(64%);
+    opacity: 0;
+    animation: welcome-header 1.5s forwards;
+}
+
+.welcome-quote, .welcome-support, .welcome-help {
+    position: relative;
+    font-family: "Regular", sans-serif, 'Open Sans';
+    color: white;
+    text-transform: uppercase;
+}
+
+.welcome-quote {
+    left: -8px;
+    font-size: 10rem;
+}
+
+.welcome-support {
+    top: -11px;
+    left: -2px;
+    font-size: 3.63rem;
+}
+
+.welcome-help {
+    top: -3px;
+    font-size: 2.19rem;
+}
+
+@keyframes welcome-header {
+    to {
+        opacity: 1;
+        margin-left: 10%;
+    }
+}
+
+#welcome-page-navigation {
+    position: relative;
+    top: 197px;
+    margin-left: 10%;
+    background: purple !important;
+}
+
+.divider {
+    top: 0px !important;
+}
+
+#welcome-page-navigation div span:hover {
+    color: var(--colorGreen) !important;
+}
+
+.page-header {
+    color: var(--colorGreen);
+    margin-left: -4px;
+}
+
+.donation-box {
+    position: relative;
+    background: white;
+}
+
+.donation-box-emoji {
+    background: var(--colorLightGreen);
+    position: relative;
+    border-radius: 50%;
+    margin: auto auto;
+    margin-top: 10%;
+    margin-bottom: 10vh;
+    padding-top: 22%;
+    transition: .15s all;
+}
+
+.donation-box-image-text {
+    transform: translateY(-80%) !important;
+    background-color: var(--colorLightGreen) !important;
+}
+
+.donation-box:hover .donation-box-image-text, .donation-box:hover .donation-box-emoji {
+    background-color: var(--colorGreen) !important;
+}
+
+.donation-box:hover {
+    cursor: pointer;
+}
+
+#money-tab, #pick-up {
+    position: relative;
+    margin: 0;
+    padding: 3.8% 0;
+    padding-bottom: 3.1%;
+    transition: 5s all;
+}
+
+#money-tab>.page-header, #pick-up>.page-header {
+    margin-top: -2% !important;
+    padding-bottom: 1%;
+}
+
+.show-display {
+    /* display: block !important; */
+    /* transform: translateX(0%); */
+}
+
+.divider-image {
+    position: relative;
+    width: 47vw;
+    height: 43vh;
+    width: 100%;
+    background: url(../images/footer2.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#footer {
+    background: url(../images/b.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.money-container, .pickup-container {
+    position: relative;
+    width: 80%;
+    background: white;
+    margin: 0px 10%;
+    padding: 2.5% 0;
+}
+
+.money-left {
+    position: relative;
+    width: 25%;
+    margin-left: 10%;
+}
+
+.money-right {
+    position: relative;
+    width: 55%;
+    padding-top: 1%;
+    padding-left: 5%;
+}
+
+.money-selection, .payment-recurrence {
+    position: relative;
+    font-size: 1.2rem;
+    color: white;
+    background: var(--colorLightGreen);
+    text-align: center !important;
+    padding: 20px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.money-selection:hover, .payment-bottom-right:hover {
+    background: var(--colorGreen);
+}
+
+.gift-options {
+    position: absolute;
+    width: 91%;
+    bottom: 20%;
+}
+
+.payment-recurrence {
+    float: left;
+    width: 32.66% !important;
+    font-size: 1rem;
+}
+
+.payment-recurrence:nth-child(2) {
+    margin: 0 1%;
+    margin-top: 5px;
+}
+
+.money-msg {
+    position: relative;
+    line-height: 1.5rem;
+}
+
+.payment-bottom-right {
+    position: absolute;
+    width: 91%;
+    margin-bottom: 5px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    font-size: 1.2rem;
+    background: var(--colorLightGreen);
+}
+
+.payment-bottom-right:hover {
+    cursor: not-allowed;
+}
+
+.pickup-container {
+    padding-left: 23%;
+    padding-right: 23%;
+}
+
+/* 
+.form-left {
+    float: left;
+}
+
+.form-right {
+    float: right;
+} */
+
+.form-100 {
+    width: 100%;
+}
+
+.form-50 {
+    width: 49.5%;
+    width: 100%;
+}
+
+.form-33 {
+    width: 32.85%;
+    width: 100%;
+}
+
+form>input {
+    padding: 10px;
+    width: 100%;
+    margin: 3px 0;
+    border: 0.5px solid gray;
+    font-size: 1rem;
+}
+
+form>input:not(:nth-child(4)):hover {
+    border: 0.5px solid var(--colorGreen);
+}
+
+.schedule-button {
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    background: var(--colorLightGreen);
+}
+
+.schedule-button:hover {
+    cursor: not-allowed;
+    background: var(--colorGreen);
+}
+
+.icon-instagram:hover {
+    background: url(../images/icon/instagram-green.png);
+}
+
+.icon-facebook:hover {
+    background: url(../images/icon/facebook-green.png);
+}
+
+.icon-twitter:hover {
+    background: url(../images/icon/twitter-green.png);
+}
+
+.icon-youtube:hover {
+    background: url(../images/icon/youtube-green.png);
+}
+
+.icon-envelope:hover {
+    background: url(../images/icon/envelope-green.png);
+}
+
+.icon-phone:hover {
+    background: url(../images/icon/phone-green.png);
+}
+
+.icon-fax:hover {
+    background: url(../images/icon/fax-green.png);
+}
+
+.donation-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-map-marker:hover {
+    background: url(../images/icon/map-marker-green.png);
+}
+
+.full {
+    position: absolute;
+    transform: translate(-50%, -10%);
+    width: 50%;
+    height: 50%;
+}
